@@ -1,3 +1,8 @@
+h <- "Document for Govt and Expert Review
+4a620740
+FIRST ORDER DRAFT Summary for Policymakers IPCC WGII Sixth Assessment Report"
+f <- "Do Not Cite, Quote or Distribute SPM-7 Total pages: 57"
+
 x <- "
 12
 13
@@ -56,4 +61,6 @@ FIRST ORDER DRAFT Summary for Policymakers IPCC WGII Sixth Assessment Report
 4 ecosystem services in ocean and coastal systems have been implemented at effective scales (high
 5 confidence). {3.4.2, 3.6.3, 13.4.2, 16.3.1, 16.4.2, 16.4.3}"
 
-clean_text(x, headfoot)
+source("IPCC_Helpers.R")
+
+clean_text(x, h, f)
