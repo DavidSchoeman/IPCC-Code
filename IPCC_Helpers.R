@@ -11,7 +11,8 @@
 
 # Function to remove headers/footers/line numbers etc from SMP --------------------------------
 	# x is text copied from the PDF and pasted into R
-	# headfoot is the combined header and footer string, again copied from the PDF and pasted into R
+	# h is the header string, again copied from the PDF and pasted into R (including serial number, etc.)
+	# f is the footer string, again copied from the PDF and pasted into R
 	clean_text <- function(x, h, f) {
 		xx <- str_replace_all(x, h, "") %>% # Dump the header text
 			str_replace_all(., f, "") %>% # Dump the footer text
